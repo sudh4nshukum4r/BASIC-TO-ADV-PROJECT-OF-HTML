@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Defines the character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the page responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Sets the browser tab title -->
+    <title>Login Form</title>
+</head>
+
+<body>
+
+    <!-- Main heading -->
+    <h1>Login Form</h1>
+
+    <!-- Collects login information -->
+    <form action="#" method="post">
+
+        <!-- Email field -->
+        <p>
+            <label for="email">Email Address:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+        </p>
+
+        <!-- Password field -->
+        <p>
+            <label for="password">Password:</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                minlength="8"
+                required
+            >
+        </p>
+
+        <!-- Remember Me checkbox -->
+        <p>
+            <input
+                type="checkbox"
+                id="remember"
+                name="remember"
+                value="yes"
+            >
+            <label for="remember">Remember Me</label>
+        </p>
+
+        <!-- Login button -->
+        <button type="submit">Login</button>
+
+        <!-- Clears the form fields -->
+        <button type="reset">Reset</button>
+
+    </form>
+
+    <!-- Link to the password recovery page -->
+    <p>
+        <a href="#">Forgot Password?</a>
+    </p>
+
+    <!-- Link to the registration page -->
+    <p>
+        Don't have an account?
+        <a href="#">Create an Account</a>
+    </p>
+
+</body>
+</html>
