@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Defines character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the page responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Sets the browser tab title -->
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+
+    <!-- Main heading -->
+    <h1>Student Registration Form</h1>
+
+    <!-- Collects the student's information -->
+    <form>
+
+        <!-- 1. Full Name -->
+        <p>
+            <label for="fullname">Full Name:</label>
+            <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Enter your full name"
+                required
+            >
+        </p>
+
+        <!-- 2. Email Address -->
+        <p>
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+        </p>
+
+        <!-- 3. Password: minimum 8 characters -->
+        <p>
+            <label for="password">Password:</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                minlength="8"
+                placeholder="Enter your password"
+                required
+            >
+        </p>
+
+        <!-- 4. Date of Birth -->
+        <p>
+            <label for="dob">Date of Birth:</label>
+            <input
+                type="date"
+                id="dob"
+                name="dob"
+                required
+            >
+        </p>
+
+        <!-- 5. Phone Number -->
+        <p>
+            <label for="phone">Phone Number:</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                required
+            >
+        </p>
+
+        <!-- 6. Gender: same name groups the radio buttons -->
+        <fieldset>
+            <legend>Select Gender:</legend>
+
+            <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="Male"
+                required
+            >
+            <label for="male">Male</label>
+
+            <input
+                type="radio"
+                id="female"
+                name="gender"
+                value="Female"
+            >
+            <label for="female">Female</label>
+
+            <input
+                type="radio"
+                id="other"
+                name="gender"
+                value="Other"
+            >
+            <label for="other">Other</label>
+        </fieldset>
+
+        <!-- 7. Course Dropdown -->
+        <p>
+            <label for="course">Choose Course:</label>
+
+            <select id="course" name="course" required>
+                <option value="">Select a course</option>
+                <option value="BTech">B.Tech</option>
+                <option value="BCA">BCA</option>
+                <option value="BBA">BBA</option>
+                <option value="MCA">MCA</option>
+            </select>
+        </p>
+
+        <!-- 8. City -->
+        <p>
+            <label for="city">City:</label>
+            <input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="Enter your city"
+                required
+            >
+        </p>
+
+        <!-- 9. Profile Photo -->
+        <p>
+            <label for="photo">Upload Profile Photo:</label>
+            <input
+                type="file"
+                id="photo"
+                name="photo"
+                accept="image/*"
+            >
+        </p>
+
+        <!-- 10. Terms and Conditions -->
+        <p>
+            <input
+                type="checkbox"
+                id="terms"
+                name="terms"
+                value="accepted"
+                required
+            >
+            <label for="terms">
+                I agree to the terms and conditions.
+            </label>
+        </p>
+
+        <!-- Submit sends the form for processing -->
+        <button type="submit">Register</button>
+
+        <!-- Reset restores fields to their initial state -->
+        <button type="reset">Reset</button>
+
+    </form>
+
+</body>
+</html>
